@@ -12,9 +12,25 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var dbLocation = ""
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        let dirs = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        self.dbLocation = dirs[0] + "/Person.db"
+        
+        if !(FileManager.default.fileExists(atPath: self.dbLocation)) {
+            let getPath = Bundle.main.path(forResource: "Person", ofType: "db")
+            do{
+                try FileManager.default.copyItem(atPath: getPath!, toPath: self.dbLocation)
+            }
+            catch (let err as NSError){
+                print("Error in copy \(err.localizedDescription)" )
+            }
+        }
+        print(dbLocation)
+        
         // Override point for customization after application launch.
         return true
     }

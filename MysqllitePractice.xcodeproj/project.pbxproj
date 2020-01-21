@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E2102E023D5953C006E3972 /* Person.db in Resources */ = {isa = PBXBuildFile; fileRef = 8E2102DF23D5953C006E3972 /* Person.db */; };
+		8E2102E923D59DB4006E3972 /* dbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2102E823D59DB4006E3972 /* dbManager.swift */; };
 		8E5A02A523D1B5C700D44009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5A02A423D1B5C700D44009 /* AppDelegate.swift */; };
 		8E5A02A723D1B5C700D44009 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5A02A623D1B5C700D44009 /* ViewController.swift */; };
 		8E5A02AA23D1B5C700D44009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E5A02A823D1B5C700D44009 /* Main.storyboard */; };
 		8E5A02AC23D1B5C700D44009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E5A02AB23D1B5C700D44009 /* Assets.xcassets */; };
 		8E5A02AF23D1B5C700D44009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E5A02AD23D1B5C700D44009 /* LaunchScreen.storyboard */; };
+		8E9A656823D6F15300EF8B6D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9A656723D6F15300EF8B6D /* LoginViewController.swift */; };
+		8E9A656A23D6F18200EF8B6D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9A656923D6F18200EF8B6D /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E2102DF23D5953C006E3972 /* Person.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = Person.db; path = MysqllitePractice/Person.db; sourceTree = SOURCE_ROOT; };
+		8E2102E123D5956A006E3972 /* MysqllitePractice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MysqllitePractice-Bridging-Header.h"; sourceTree = "<group>"; };
+		8E2102E823D59DB4006E3972 /* dbManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dbManager.swift; sourceTree = "<group>"; };
 		8E5A02A123D1B5C700D44009 /* MysqllitePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MysqllitePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E5A02A423D1B5C700D44009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E5A02A623D1B5C700D44009 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,8 @@
 		8E5A02AB23D1B5C700D44009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E5A02AE23D1B5C700D44009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E5A02B023D1B5C700D44009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E9A656723D6F15300EF8B6D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8E9A656923D6F18200EF8B6D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E2102DD23D59474006E3972 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				8E2102DF23D5953C006E3972 /* Person.db */,
+				8E2102E823D59DB4006E3972 /* dbManager.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		8E5A029823D1B5C700D44009 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +72,16 @@
 		8E5A02A323D1B5C700D44009 /* MysqllitePractice */ = {
 			isa = PBXGroup;
 			children = (
+				8E2102DD23D59474006E3972 /* New Group */,
 				8E5A02A423D1B5C700D44009 /* AppDelegate.swift */,
 				8E5A02A623D1B5C700D44009 /* ViewController.swift */,
 				8E5A02A823D1B5C700D44009 /* Main.storyboard */,
 				8E5A02AB23D1B5C700D44009 /* Assets.xcassets */,
 				8E5A02AD23D1B5C700D44009 /* LaunchScreen.storyboard */,
 				8E5A02B023D1B5C700D44009 /* Info.plist */,
+				8E2102E123D5956A006E3972 /* MysqllitePractice-Bridging-Header.h */,
+				8E9A656723D6F15300EF8B6D /* LoginViewController.swift */,
+				8E9A656923D6F18200EF8B6D /* SignUpViewController.swift */,
 			);
 			path = MysqllitePractice;
 			sourceTree = "<group>";
@@ -96,6 +118,7 @@
 				TargetAttributes = {
 					8E5A02A023D1B5C700D44009 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E2102E023D5953C006E3972 /* Person.db in Resources */,
 				8E5A02AF23D1B5C700D44009 /* LaunchScreen.storyboard in Resources */,
 				8E5A02AC23D1B5C700D44009 /* Assets.xcassets in Resources */,
 				8E5A02AA23D1B5C700D44009 /* Main.storyboard in Resources */,
@@ -136,8 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9A656823D6F15300EF8B6D /* LoginViewController.swift in Sources */,
 				8E5A02A723D1B5C700D44009 /* ViewController.swift in Sources */,
 				8E5A02A523D1B5C700D44009 /* AppDelegate.swift in Sources */,
+				8E2102E923D59DB4006E3972 /* dbManager.swift in Sources */,
+				8E9A656A23D6F18200EF8B6D /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,11 +301,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MysqllitePractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vijay.MysqllitePractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MysqllitePractice/MysqllitePractice-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,11 +318,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MysqllitePractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vijay.MysqllitePractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MysqllitePractice/MysqllitePractice-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
